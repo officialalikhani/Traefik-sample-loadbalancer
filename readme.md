@@ -11,7 +11,7 @@ This repository provides a sample setup for running a Traefik load balancer with
 Clone this repository:
 
  ```bash
- git clone https://github.com/officialalikhani/Traefik-sample-yaml.git
+ git clone https://github.com/officialalikhani/Traefik-sample-loadbalancer.git
 
 ```
 
@@ -23,7 +23,7 @@ Update the Nginx container configurations (e.g., port, volumes, etc.) if needed.
 Start the Traefik load balancer and Nginx containers:
 
 ```bash
-docker compose up -d
+docker-compose up -d
 ```
 
 This command will start the Traefik load balancer and three Nginx instances.
@@ -39,7 +39,12 @@ Cleanup:
 To stop and remove the containers, run the following command:
 
 ```bash
-docker compose down
+docker-compose down
+```
+To Scale Up and Down:
+
+```bash
+docker-compose up -d --scale panel= #Count you need#
 ```
 
 This will remove the Traefik load balancer and Nginx containers.
