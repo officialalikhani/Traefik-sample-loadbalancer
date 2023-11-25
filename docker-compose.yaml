@@ -77,7 +77,7 @@ services:
      - "traefik.http.routers.repo-secure.service=repo-secure"
      - "traefik.http.services.repo-secure.loadbalancer.server.port=80"
 
-  ningx2:
+  nginx2:
     image: nginx
     restart: always
     networks:
@@ -96,7 +96,7 @@ services:
      - "traefik.http.routers.repo-secure.tls.certresolver=mycert"
      - "traefik.http.routers.repo-secure.service=repo-secure"
      - "traefik.http.services.repo-secure.loadbalancer.server.port=80"
-  ningx3:
+  nginx3:
     image: nginx
     restart: always
     networks:
