@@ -1,6 +1,6 @@
 # Traefik Load Balancer with Nginx
 
-This repository provides a sample setup for running a Traefik load balancer with three Nginx instances.
+This repository provides a sample setup for running a Traefik load balancer with Nginx instances.
 
 ## Prerequisites
 
