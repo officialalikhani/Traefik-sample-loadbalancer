@@ -41,13 +41,13 @@ To stop and remove the containers, run the following command:
 ```bash
 docker-compose down
 ```
+This will remove the Traefik load balancer and Nginx containers.
+
 To Scale Up and Down:
 
 ```bash
 docker-compose up -d --scale panel= #Count you need#
 ```
 
-This will remove the Traefik load balancer and Nginx containers.
 
-Configuration!
 
